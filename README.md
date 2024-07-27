@@ -5,9 +5,9 @@ link : [Click!](https://www.swisstronik.com/testnet2/dashboard)
 Feel free donate to my EVM address
 
 EVM :
-
+0x722ab2a3fBA1bFa6021cc730215A06b24434B8fd
 ```bash
-0x9902C3A98Df4b240ad5496cC26F89bAb8058f4aE
+
 ```
 
 ## Steps
@@ -15,7 +15,7 @@ EVM :
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/Mnuralim/swisstronik-deploy-private-nft.git
+git clone https://github.com/mazefire12/swisstronik-deploy-private-nft.git
 ```
 ```bash
 cd swisstronik-deploy-private-nft
@@ -59,7 +59,7 @@ contract PrivateNFT is ERC721, Ownable {
     event NFTMinted(address recipient, uint256 tokenId);
     event NFTBurned(uint256 tokenId);
 
-    constructor(address initialOwner) ERC721("IzzyPrivate", "IZZPRVT") Ownable(initialOwner) {}
+    constructor(address initialOwner) ERC721("mazefirePrivate", "mazePRVT") Ownable(initialOwner) {}
 
     function mintNFT(address recipient) public onlyOwner returns (uint256) {
         _currentTokenId += 1;
@@ -126,9 +126,4 @@ git branch -M main
 git push -u origin main
 ```
 
-by :
-github : [Mnuralim](https://github.com/Mnuralim)
-twitter : @Izzycracker04
-telegram : @fitriay19
 
-//0x5cED43F3224e3F7C7EFA6ABdE9A960A44E3B2dD9// ignore this
